@@ -13,9 +13,6 @@ from dotenv import load_dotenv
 # Load the .env file
 load_dotenv()
 
-# Access the keys
-API_KEY = os.getenv('OPENAI_API_KEY')
-
 # 1. Vectorise the sales response csv data
 loader = CSVLoader(file_path="output.csv")
 documents = loader.load()
